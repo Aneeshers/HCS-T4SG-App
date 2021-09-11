@@ -14,10 +14,7 @@ import CloseIcon from "@material-ui/icons/Close";
 import { Color } from "react-bootstrap/esm/types";
 import Button from "react-bootstrap/Button";
 import { useMutation} from "urql";
-import {
-  ManagementCategory,
-  ManagementContainerQuery,
-} from "../CaseManagementContainer";
+
 
 type CaseCardProps = {
   data: CaseData;
@@ -76,6 +73,7 @@ if (caseData.status == "Done") {
         {executeMutation({
           id: caseData.id,
         });
+
         }
       
       }>
